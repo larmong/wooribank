@@ -19,111 +19,388 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <!-- wrap -->
-    <div class="wrap">
+    <!-- skip -->
+    <div class="skip"></div>
+    <!-- //skip -->
 
-        <!-- skip -->
-        <div class="skip"></div>
-        <!-- //skip -->
-
-        <!-- header -->
-        <header>
-            <div class="container">
-                <div class="row">
-                    <div class="header">
-                        <h1 class="logo"><a href="#"><img src="./assets/img/logo.png" alt="wooribank"></a></h1>
-                        <div class="leftMenu">
-                            <div class="login"><a href="#"><i class="fas fa-power-off"></i><span>로그인</span></a></div>
-                            <div class="shield"><a href="#"><i class="fas fa-shield-alt"></i><span>인증센터</span></a></div>
-                        </div>
-                        <nav class="gnb">
-                            <ul>
-                                <li><a href="#">개인</a></li>
-                                <li><a href="#">기업</a></li>
-                                <li><a href="#">자산관리</a></li>
-                                <li><a href="#">금융상품</a></li>
-                                <li><a href="#">카드</a></li>
-                            </ul>
-                        </nav>
-                        <div class="rightMenu">
-                            <div class="search"><a href="#"><i class="fas fa-search"></i></a></div>
-                            <div class="language"><a href="#"><i class="fas fa-globe"></i></a></div>
-                            <div class="navigation"><a href="#"><i class="fas fa-bars"></i></a></div>
-                        </div>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="header">
+                    <h1 class="logo"><a href="#"><img src="./assets/img/logo.png" alt="wooribank"></a></h1>
+                    <div class="leftMenu">
+                        <div class="login"><a href="#"><i class="fas fa-power-off"></i><span>로그인</span></a></div>
+                        <div class="shield"><a href="#"><i class="fas fa-shield-alt"></i><span>인증센터</span></a></div>
                     </div>
-                </div>
-            </div>
-        </header>
-        <!-- //header -->
-
-        <!-- main -->
-        <main>
-            <!-- <div class="container"> -->
-                <div class="row">
-                    <div class="main">
-                        <div class="banner_container">
-                            <div class="banner">
-                                <img class="slide ban1" src="./assets/img/banner01.png" alt="bannerImg">
-                                <img class="slide ban2" src="./assets/img/banner02.png" alt="bannerImg">
-                                <img class="slide ban3" src="./assets/img/banner03.png" alt="bannerImg">
-                            </div>
-                            <div class="banner_btn">
-                                <button class="slide1">1</button>
-                                <button class="slide2">2</button>
-                                <button class="slide3">3</button>
-                            </div>
-                            <div class="prev_next">
-                                <button class="prev_btn">이전</button>
-                                <button class="next_btn">다음</button>
-                            </div>
-
+                    <nav class="gnb">
+                        <ul>
+                            <li><a href="#">개인</a></li>
+                            <li><a href="#">기업</a></li>
+                            <li><a href="#">자산관리</a></li>
+                            <li><a href="#">금융상품</a></li>
+                            <li><a href="#">카드</a></li>
+                        </ul>
+                    </nav>
+                    <div class="rightMenu">
+                        <!-- search -->
+                        <div class="search">
+                            <form>
+                                <input class="search_box" type="text" placeholder="Search">
+                            </form>
                         </div>
+                        <!-- //search -->
+                        <div class="search_btn"><a href="#"><i class="fas fa-search"></i></a></div>
+                        <div class="overlay"></div>
+                        <div class="language">
+                            <a href="#"><i class="fas fa-globe"></i></a>
+                            <div class="language_choice_box">
+                                <ul class="language_choice">
+                                    <li><a href="#">한국어</a></li>
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">日本語</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="navigation"><a href="#"><i class="fas fa-bars"></i></a></div>
                     </div>
-                </div>
-            <!-- </div> -->
-        </main>
-        <!-- //main -->
-
-        <!-- contents -->
-        <div class="contents">
-            <div class="container">
-                <div class="row">
-
-                    <!-- cont1 -->
-                    <section class="cont1">cont1</section>
-                    <!-- //cont1 -->
-
-                    <!-- cont2 -->
-                    <section class="cont2">cont2</section>
-                    <!-- //cont2 -->
-                    
-                    <!-- cont3 -->
-                    <section class="cont3">cont3</section>
-                    <!-- //cont3 -->
-                    
-                    <!-- cont4 -->
-                    <section class="cont4">cont4</section>
-                    <!-- //cont4 -->
-
                 </div>
             </div>
         </div>
-        <!-- //contents -->
+    </header>
+    <!-- //header -->
 
-        <!-- footer -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="footer">
-                        footer
+    <!-- main -->
+    <main>
+        <!-- banner -->
+        <div class="banner">
+            <div class="slide_container">
+                <div class="slide_box">
+                    <div class="slide s1">
+                        <img src="./assets/img/banner01.png" alt="banner">
+                    </div>
+                    <div class="slide s2">
+                        <img src="./assets/img/banner02.png" alt="banner">
+                    </div>
+                    <div class="slide s3">
+                        <img src="./assets/img/banner03.png" alt="banner">
                     </div>
                 </div>
             </div>
-        </footer>
-        <!-- //footer -->
 
+            <div class="banner_btn">
+                <button class="slide_btn sb1 target ir_pm">1</button>
+                <button class="slide_btn sb2 ir_pm">2</button>
+                <button class="slide_btn sb3 ir_pm">3</button>
+            </div>
+            <div class="prev_next">
+                <button class="prev_btn"><i class="fas fa-angle-left"></i><span class="ir_pm">이전</span></button>
+                <button class="next_btn"><i class="fas fa-angle-right"></i><span class="ir_pm">다음</span></button>
+            </div>
+        </div>
+        <!-- //banner -->
+        <!-- quickMenu -->
+        <div class="quickMenu">
+            <div class="quickMenu_center">
+                <a href="#"><span class="line">조회</span></a>
+                <a href="#"><span class="line">이체</span></a>
+                <a href="#"><span>환율</span></a>
+            </div>
+            <div class="quickMenu_left">
+                <a href="#"><span>다른기관<br>정보조회</span></a>
+            </div>
+            <div class="quickMenu_right">
+                <a href="#"><span>빠른메뉴</span></a>
+            </div>
+        </div>
+        <!-- //quickMenu -->
+    </main>
+    <!-- //main -->
+
+    <!-- contents -->
+    <div class="contents">
+        
+            <!-- cont1 -->
+            <section class="cont1">
+                <div class="container">
+                    <div class="row">
+                        <h4>카드</h4>
+                        <div class="icon_box">
+                            <div class="icon ic01">
+                                <a href="#">
+                                    <i class="far fa-credit-card"></i>
+                                    <p>카드신청</p>
+                                </a>
+                            </div>
+                            <div class="icon ic02">
+                                <a href="#">
+                                    <i class="far fa-address-card"></i>
+                                    <p>나의카드</p>
+                                </a>
+                            </div>
+                            <div class="icon ic03">
+                                <a href="#">
+                                    <i class="fas fa-gift"></i>
+                                    <p>이벤트</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //cont1 -->
+
+            <!-- cont2 -->
+            <section class="cont2">
+                <div class="container">
+                    <div class="row">
+                        <h4>금융상품</h4>
+                        <div class="item_box">
+                            <div class="item it01">
+                                <a href="#">
+                                    <i class="fas fa-coins"></i>
+                                    <p>예금</p>
+                                </a>
+                            </div>
+                            <div class="item it02">
+                                <a href="#">
+                                    <i class="fas fa-hand-holding-usd"></i>
+                                    <p>대출</p>
+                                </a>            
+                            </div>
+                            <div class="item it03">
+                                <a href="#">
+                                    <i class="fas fa-chart-bar"></i> 
+                                    <p>펀드</p>
+                                </a>
+                            </div>
+                            <div class="item it04">
+                                <a href="#">
+                                    <i class="fas fa-dollar-sign"></i>
+                                    <p>외환</p>
+                                </a>
+                            </div>
+                            <div class="item it05">
+                                <a href="#">
+                                    <i class="fas fa-hand-holding-usd"></i> 
+                                    <p>신탁</p>
+                                </a>
+                            </div>
+                            <div class="item it06">
+                                <a href="#">
+                                    <i class="fas fa-user-tie"></i>
+                                    <p>퇴직연금</p>
+                                </a>
+                            </div>
+                            <div class="item it07">
+                                <a href="#">
+                                    <i class="fab fa-slideshare"></i>
+                                    <p>보험</p>
+                                </a>
+                            </div>
+                            <div class="item it08">
+                                <a href="#">
+                                    <i class="fas fa-scroll"></i>
+                                    <p>ISA</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //cont2 -->
+            
+            <!-- cont3 -->
+            <section class="cont3">
+                <div class="container">
+                    <div class="row">
+                        <h4>서비스</h4>
+                        <div class="picture_box">
+                            <div class="picture_container">
+                                <picture>
+                                    <a href="#">
+                                        <img src="./assets/img/service01.jpg" alt="service01">
+                                        <figcaption>
+                                            <h5>우리WON뱅킹</h5>
+                                            <p>
+                                                새 시대의 금융을 켜다,<br>
+                                                우리은행 대표 모바일뱅킹 APP
+                                            </p>
+                                        </figcaption>
+                                    </a>
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="picture_box">
+                            <div class="picture_container">
+                                <picture>
+                                    <a href="#">
+                                        <img src="./assets/img/service02.jpg" alt="service02">
+                                        <figcaption>
+                                            <h5>자산관리</h5>
+                                            <p>
+                                                소액투자부터 미래 설계까지<br>
+                                                호율적인 자산관리를 시작하세요
+                                            </p>
+                                        </figcaption>
+                                    </a>
+                                </picture>
+                            </div>
+                        </div>
+                        <div class="picture_box">
+                            <div class="picture_container">
+                                <picture>
+                                    <a href="#">
+                                        <img src="./assets/img/service03.jpg" alt="service03">
+                                        <figcaption>
+                                            <h5>스마트간편신규</h5>
+                                            <p>
+                                                직원에게 추천받으신 상품을<br>
+                                                간편하게 가입하세요
+                                            </p>
+                                        </figcaption>
+                                    </a>
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //cont3 -->
+            
+            <!-- cont4 -->
+            <section class="cont4">
+                <div class="container">
+                    <div class="row">
+                        <!-- news -->
+                        <div class="news">
+                            <div class="tit">
+                                <h4>새소식</h4>
+                                <div class="more">
+                                    <a href="#">
+                                        <span>더보기</span>
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="article_box">
+                                <article>
+                                    <a href="#">
+                                        <h5>[공지]</h5>
+                                        <p>코로나19 확산 방지를 위한 수도권지역 영업시간 단축 안내</p>
+                                        <span>2021.07.09</span>
+                                    </a>
+                                </article>
+                                <article>
+                                    <a href="#">
+                                        <h5>[공지]</h5>
+                                        <p>오픈뱅킹 서비스 일시중단 안내</p>
+                                        <span>2021.07.06</span>
+                                    </a>
+                                </article>
+                                <article>
+                                    <a href="#">
+                                        <h5>[채용]</h5>
+                                        <p>2021년 상반기 우리은행 디지털/IT부문 신입행원 채용 1차 인터뷰 합격자 발표</p>
+                                        <span>2021.06.30</span>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- //news -->
+
+                        <!-- event -->
+                        <div class="event">
+                            <div class="tit">
+                                <h4>이벤트</h4>
+                                <div class="more">
+                                    <a href="#">
+                                        <span>더보기</span>
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="article_box">
+                                <article>
+                                    <a href="#">
+                                        <p>우리 직장인셀럽 GRAND OPEN!</p>
+                                    </a>
+                                </article>
+                                <article>
+                                    <a href="#">
+                                        <p>청년을 위한 우리미래드림바우처 Ⅱ</p>
+                                    </a>
+                                </article>
+                                <article>
+                                    <a href="#">
+                                        <p>우리 아이 첫 통장 만들고 1만원 받으세요!</p>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                        <!-- event -->
+                    </div>
+                </div>
+            </section>
+            <!-- //cont4 -->
     </div>
-    <!-- //wrap -->
+    <!-- //contents -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer">
+                    <!-- footer_top -->
+                    <div class="footer_top">
+                        <div class="top_menu">
+                            <ul>
+                                <li><a href="#">대표번호 1588-5000<i class="fas fa-angle-up"></i></a></li>
+                                <li><a href="#">기타서비스<i class="fas fa-angle-up"></i></a></li>
+                                <li><a href="#">LANGUGE<i class="fas fa-angle-up"></i></a></li>
+                                <li><a href="#">패밀리사이트<i class="fas fa-angle-up"></i></a></li>
+                            </ul>
+                        </div>
+                        <div  class="footer_sns">
+                            <ul>
+                                <li><a href="#"><span class="ir_so">페이스북</span><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><span class="ir_so">인스타그램</span><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><span class="ir_so">트위터</span><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><span class="ir_so">유튜브</span><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="#"><span class="ir_so">블로그</span><i class="fab fa-twitch"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //footer_top -->
+                    <!-- footer_bottom -->
+                    <div class="footer_bottom">
+                        <h2 class="footer_logo"><a href="#"><img src="./assets/img/footerLogo.png" alt="footer_logo"></a></h2>
+                        <div class="footer_content">
+                            <div class="footer_text">
+                                <ul>
+                                    <li><a href="#">은행소개</a></li>
+                                    <li><a href="#">영업점안내</a></li>
+                                    <li><a href="#">고객광장</a></li>
+                                    <li class="important"><a href="#"><strong>개인정보처리방침</strong></a></li>
+                                    <li class="important"><a href="#"><strong>신용정보활용체제</strong></a></li>
+                                    <li><a href="#">개인신용정보관리보호</a></li>
+                                    <li><a href="#">사고신고</a></li>
+                                    <li><a href="#">전자민원접수</a></li>
+                                    <li><a href="#">보호금융상품등록부</a></li>
+                                    <li><a href="#">상품공시실</a></li>
+                                    <li><a href="#">보안센터</a></li>
+                                    <li><a href="#">웹접근성 이용안내</a></li>
+                                </ul>
+                            </div>
+                            <p class="copy">COPYRIGHTS WOORI BANK. ALL RIGHTS RESERVED.</p>
+                        </div>
+                    </div>
+                    <!-- //footer_bottom -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
 
 
     <!-- js -->
@@ -131,6 +408,104 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/js/main.js">
+
+    <script>
+
+        // search
+        $('.search_btn').click(function(){
+            $('.search_box').css('width', '300px').focus();
+            // $('.gnb').css('display', 'none');
+        });
+
+        $('.search_box').focusout(function() {
+            $('.search_box').css('width', '0px');
+            // $('.gnb').css('display', 'block');
+        });
+
+        // language
+        $('.language').click(function(){
+            $('.language_choice_box').fadeIn();
+            $('.overlay').css('display', 'block');
+        });
+        $('.overlay').click(function(){
+            $('.language_choice_box').fadeOut();
+            $('.overlay').css('display', 'none');
+        });
+
+        // banner
+        let banner = document.getElementsByClassName('slide_box')[0];
+        let bannerBtn = document.getElementsByClassName('slide_btn');
+        
+        bannerBtn[0].addEventListener('click', function(){
+            banner.style.transform = 'translateX(0vw)'
+            for( i = 0; i < 3; i++ ){
+                bannerBtn[i].classList.remove('target')
+            }
+            bannerBtn[0].classList.add('target')
+        });
+        bannerBtn[1].addEventListener('click', function(){
+            banner.style.transform = 'translateX(-100vw)'
+            for( i = 0; i < 3; i++ ){
+                bannerBtn[i].classList.remove('target')
+            }
+            bannerBtn[1].classList.add('target')
+        });
+        bannerBtn[2].addEventListener('click', function(){
+            banner.style.transform = 'translateX(-200vw)'
+            for( i = 0; i < 3; i++ ){
+                bannerBtn[i].classList.remove('target')
+            }
+            bannerBtn[2].classList.add('target')
+        });
+
+
+        // > 누를때 left값이 0vw이면 -100vw
+        // > 누를때 left값이 -100vw이면 -200vw
+        // > 누를때 left값이 -200vw이면 0vw
+        let next = document.getElementsByClassName('next_btn')[0]
+        let prev = document.getElementsByClassName('prev_btn')[0]
+
+        let show1 = 1;
+        next.addEventListener('click', function(){
+            banner.style.transform = 'translateX(-'+ show1 +'00vw)'
+            show1 = show1 + 1;
+            if( show1 >= 3 ){
+                show1 = 0;
+            }
+            for( i = 0; i < 3; i++ ){
+                bannerBtn[i].classList.remove('target')
+                if( show1 == 0 ){
+                    bannerBtn[2].classList.add('target')            
+                } else if ( show1 == 1 ){
+                    bannerBtn[0].classList.add('target')
+                } else {
+                    bannerBtn[1].classList.add('target')
+                }
+            }
+        });
+
+        let show2 = 2;
+        prev.addEventListener('click', function(){
+            banner.style.transform = 'translateX(-'+ show2 +'00vw)'
+            show2 = show2 - 1;
+            if( show2 <= -1 ){
+                show2 = 2;
+            }
+            for( i = 0; i < 3; i++ ){
+                bannerBtn[i].classList.remove('target')
+                if( show2 == 2 ){
+                    bannerBtn[0].classList.add('target')            
+                } else if ( show2 == 1 ){
+                    bannerBtn[2].classList.add('target')
+                } else {
+                    bannerBtn[1].classList.add('target')
+                }
+            }
+        });
+
+
+            
+    </script>
 
 </body>
 </html>
